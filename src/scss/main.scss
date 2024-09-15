@@ -1,0 +1,80 @@
+// https://www.youtube.com/watch?v=gP8yFWCTr7Q
+
+// @use "sass:map";
+
+// nesting
+// $breakpoints: (
+//   small: 48rem,
+//   medium: 60rem,
+//   large: 90rem,
+// );
+
+// $br-small: 48rem;
+
+// @mixin mq($size) {
+//   @media (min-width: $size) {
+//     color: red;
+//   }
+// }
+// @mixin mq($size) {
+//   @media (min-width: $size) {
+//     @content;
+//   }
+// }
+// @mixin mq($key) {
+//   $size: map.get($breakpoints, $key);
+//   @media (min-width: $size) {
+//     @content;
+//   }
+// }
+
+// .card {
+//   padding: 1rem;
+//   .title {
+//     font-size: 1.5rem;
+//   }
+//   &__title {
+//     margin: 1rem;
+//   }
+//   &-title {
+//     color: red;
+//   }
+//   @media (min-width: 768px) {
+//     padding: 1rem;
+//   }
+//   @media (min-width: $br-small) {
+//     padding: 1rem;
+//   }
+// @include mq(45rem);
+// @include mq(50rem) {
+//   margin: 2rem;
+// }
+//   @include mq(small) {
+//     background-color: red;
+//   }
+//   @include mq(medium) {
+//     background-color: red;
+//   }
+// }
+
+// nav {
+//   ul {
+//     list-style: none;
+//     display: flex;
+//   }
+//   li {
+//     padding: 1rem;
+//     a {
+//       color: rebeccapurple;
+//     }
+//   }
+// }
+
+// @use "vendor";
+@import "./components/cards";
+
+@include service1();
+
+.overlaping1 {
+  @include overlaping1();
+}
